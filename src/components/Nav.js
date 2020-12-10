@@ -17,9 +17,14 @@ const NavStyled = styled.div`
     color: ${(pr) => pr.theme.primaryColor};
     background-color: ${(pr) => pr.theme.bgColor};
     animation: ${kf} 3s ease-in-out forwards;
+    //width: 60%;
+    display: flex;
+    justify-content: space-between;
 
     button {
-    color: ${(pr) => pr.theme.tertiaryColor};
+        color: ${(pr) => pr.theme.secondaryColor};
+        background-color: ${(pr) => pr.theme.primaryColor};
+        width: 20%;
     &:hover {
       transform: scale(1.1);
       transition: all 0.2s ease-in-out;

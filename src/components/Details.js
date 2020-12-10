@@ -9,6 +9,12 @@ const DetailsStyled = styled.div`
   padding: 16px;
   color: ${(pr) => pr.theme.primaryColor};
   background-color: ${(pr) => pr.theme.bgColor};
+
+  h3{
+
+    color: ${(pr) => pr.theme.secondaryColor};
+
+  }
 `
 
 export default function apodDetails(props) {
@@ -21,7 +27,7 @@ return (
 <DetailsStyled>
 <h2>{apodTitle}Title</h2>   
 <h3>{apodDate}Date - {apodCopyright}Name</h3>
-<h3>{apodText}Harsh psych tough awesome barf bag righteous bitchin' excellent big time no can do awesome. Barf me out for sure airhead word lame chicken wicked word lame wicked wicked gotta motor. Gotta motor bogus chicken most definitely bite me blar word stellar totally. No can do harsh gotta motor wicked wicked radical wicked fantabulous tough bogus whoa barf bag. Big time wicked excellent get crucial narbo yes way waver get crucial airhead. Whoa totally narbo fantabulous mad yo waver chicken bag your face yes way chicken tough. Narbo yes way righteous tough heinous barf me out heinous barf me out. Bodacious whoa word wicked tough most definitely mega yo no can do gotta motor.</h3>
+<h4>{apodText}Harsh psych tough awesome barf bag righteous bitchin' excellent big time no can do awesome. Barf me out for sure airhead word lame chicken wicked word lame wicked wicked gotta motor. Gotta motor bogus chicken most definitely bite me blar word stellar totally. No can do harsh gotta motor wicked wicked radical wicked fantabulous tough bogus whoa barf bag. Big time wicked excellent get crucial narbo yes way waver get crucial airhead. Whoa totally narbo fantabulous mad yo waver chicken bag your face yes way chicken tough. Narbo yes way righteous tough heinous barf me out heinous barf me out. Bodacious whoa word wicked tough most definitely mega yo no can do gotta motor.</h4>
 </DetailsStyled>
 
     );
