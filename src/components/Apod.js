@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import styled, { keyframes } from "styled-components";
+import React from "react";
+import styled from "styled-components";
 
 const ImgStyled = styled.div`
     border: 1px solid ${(pr) => pr.theme.primaryColor};
@@ -10,7 +10,6 @@ const ImgStyled = styled.div`
     color: ${(pr) => pr.theme.primaryColor};
     background-color: ${(pr) => pr.theme.bgColor};
     
-    
 img {
   max-width: 100%;
   height: auto;
@@ -19,15 +18,10 @@ img {
 
 export default function apodDisplay(props) {
     const {apodImg} = props;
-
 // console.log("APOD", apodImg);
-
 return (
-
 <ImgStyled>
     <img src={apodImg} alt='APOD'></img> 
 </ImgStyled>
-
     );
-
 }

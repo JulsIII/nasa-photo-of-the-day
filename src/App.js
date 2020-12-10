@@ -40,6 +40,4 @@ const [apod, setApod] = useState({});
   );
 }
 
-// apodNavPrev={} apod NavNext={}
-
 export default App;

@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import styled, { keyframes } from "styled-components";
+import React from "react";
+import styled from "styled-components";
 
 const DetailsStyled = styled.div`
   border: 1px solid ${(pr) => pr.theme.secondaryColor};
@@ -19,17 +19,13 @@ const DetailsStyled = styled.div`
 
 export default function apodDetails(props) {
     const {apodText, apodTitle, apodDate, apodCopyright} = props;
-
 // console.log("DETAILS", apodText);
 
 return (
-
 <DetailsStyled>
 <h2>{apodTitle}</h2>   
 <h3>{apodDate} - {apodCopyright}</h3>
 <h4>{apodText}</h4>
 </DetailsStyled>
-
     );
-
 }

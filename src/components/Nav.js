@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import styled, { keyframes } from "styled-components";
 
 const kf = keyframes`
@@ -17,7 +17,6 @@ const NavStyled = styled.div`
     color: ${(pr) => pr.theme.primaryColor};
     background-color: ${(pr) => pr.theme.bgColor};
     animation: ${kf} 3s ease-in-out forwards;
-    //width: 60%;
     display: flex;
     justify-content: space-between;
 
@@ -37,7 +36,6 @@ const NavStyled = styled.div`
 
 export default function apodNav(props) {
     const {apod} = props;
-
 // console.log("NAV", apod);
 return (
 
@@ -47,7 +45,5 @@ return (
     <button>GIT</button>
     <button>Next</button>
 </NavStyled>
-
     );
-
 }
