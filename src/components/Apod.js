@@ -1,18 +1,22 @@
 import React, { useState, useEffect } from "react";
+import styled, { keyframes } from "styled-components";
 
+const ImgStyled = styled.div`
 
+    
 
+`
 
 export default function apodDisplay(props) {
-    const {apod} = props;
+    const {apodImg} = props;
 
-console.log("ASDF", apod);
+// console.log("APOD", apodImg);
 
 return (
 
-<div>
-    <img src={apod.url} alt='asdf'></img>
-</div>
+<ImgStyled>
+    <img src={apodImg} alt='APOD'></img> 
+</ImgStyled>
 
     );
 

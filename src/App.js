@@ -9,7 +9,6 @@ import "./App.css";
 const API_KEY = 'DEMO_KEY&date=2020-12-08';
 const URL = 'https://api.nasa.gov/planetary';
 
-
 function App() {
 
 const [apod, setApod] = useState({});
@@ -32,16 +31,14 @@ const [apod, setApod] = useState({});
 
   return (
     <div className="App">
-     
-      <Apod apod={apod} />
-
+      <Nav />
+      <Apod apodImg={apod.url} />
+      <Details apodText={apod.explanation} apodTitle={apod.title} apodDate={apod.date} apodCopyright={apod.copyright}/>
     </div>
   
   );
 }
 
-
-
-
+// apodNavPrev={} apod NavNext={}
 
 export default App;
