@@ -9,6 +9,12 @@ const ImgStyled = styled.div`
     padding: 14px;
     color: ${(pr) => pr.theme.primaryColor};
     background-color: ${(pr) => pr.theme.bgColor};
+    
+    
+img {
+  max-width: 100%;
+  height: auto;
+}
 `
 
 export default function apodDisplay(props) {
