@@ -1,11 +1,9 @@
 // theme object here
 export default {
-    primaryColor: "#00FFFF",
-    secondaryColor: "#FF00FF",
+    primaryColor: "#00eded",
+    secondaryColor: "#ed00ed",
     tertiaryColor: "#151515",
     bgColor: "#505050",
-    black: "black",
-    white: "white",
     breakpointMobile: "(max-width: 550px)",
     breakpoints: {
       mobile: "(max-width: 550px)",

@@ -7,7 +7,7 @@ import axios from "axios";
 import "./App.css";
 
 const API_KEY = 'DEMO_KEY&date=2020-12-08';
-const URL = '';
+const URL = 'https://api.nasa.gov/planetary';
 // https://api.nasa.gov/planetary';
 
 function App() {
